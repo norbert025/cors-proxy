@@ -19,7 +19,7 @@ app.all('*', function (req, res, next) {
         // CORS Preflight
         res.send();
     } else {
-        var targetURL = req.header('https://jhihuihiuhih.herokuapp.com/');
+        var targetURL = req.header('https://slack.com');
         if (!targetURL) {
             res.send(500, { error: 'There is no Target-Endpoint header in the request' });
             return;
